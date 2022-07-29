@@ -3,7 +3,7 @@
 
 <head>
     <title>main</title>
-    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="refresh" content="30">
     <link rel="stylesheet" href="theme/styles.css">
 </head>
 
