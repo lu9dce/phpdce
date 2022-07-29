@@ -14,6 +14,10 @@ Con lo que puedas! sera de mucha ayuda
 
 -----------------
 
+Manual en (https://gitlab.com/radioactividad/phpdce/-/wikis/home)
+
+-----------------
+
 Trabaja con wsjt-x / wsjt-z / jtdx
 
 procesado el adi en tiempo real
