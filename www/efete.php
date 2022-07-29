@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>robot</title>
-    <meta http-equiv="refresh" content="30">
+<?php
+echo '
     <style>
         .dot1 {
             height: 25px;
@@ -25,11 +21,7 @@
 
     </style>
 </head>
-
-<body>
-    <?php
+';
 include 'c:\phpdce\modulos\dxc.php';
+header( "refresh: 30;" );
 ?>
-</body>
-
-</html>

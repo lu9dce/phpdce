@@ -14,7 +14,7 @@ $dirt = "C:\\phpdce\\";
 // phpdce activo?
 include $dirt.'usr\\variables.php';
 if ( $phpdce == false ) {
-    exit ( 0 );
+    goto fin;
 }
 
 // existe el adi?
@@ -22,7 +22,7 @@ if ( file_exists( $adiwsjt ) ) {
     echo '<span title="ROBOT (VERDE OK / ROJO ERROR)" class="dot1"></span>';
 } else {
     echo '<span title="ROBOT (VERDE OK / ROJO ERROR)" class="dot0"></span>';
-    exit;
+       goto fin;
 }
 
 // existe el adicontrol?
@@ -38,7 +38,7 @@ $z = $xz[0];
 
 // chequea si hay nuevo qso
 if ( $x == $z ) {
-    exit;
+        goto fin;
 }
 
 // contador de tiempo a 0
@@ -251,5 +251,7 @@ $fin = number_format( $execution_time, 2 );
 $mya = fopen( $dirt.'tmp\\time.txt', "w" );
 fwrite( $mya, $fin );
 fclose( $mya );
+
+fin:
 
 ?>

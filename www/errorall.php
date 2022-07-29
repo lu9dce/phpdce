@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>error all</title>
-</head>
-
+<?php
+echo '
 <body style="color: #cccccc; background-color: #320000;" alink="#000099" vlink="#990099" link="#cccccc">
     <p>Se produjo un error</p>
     <br>
@@ -19,6 +14,5 @@
     <br>
     <p>73 - LU9DCE</p>
     <br>
-</body>
-
-</html>
+';
+?>

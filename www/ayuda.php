@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
-
+<?php echo'
 <head>
-    <title>ayuda</title>
     <link rel="stylesheet" href="theme/styles.css">
 </head>
-
-<body>
     <div id="tabletab" class="baseh">
         <div id="contenido">
-            <div id="colum">
+            <div id="colum"><br>
                 <p>(A) BOTON DE MONITOREO</p>
                 <p>(B) TRAFICO DE WSJT</p>
                 <p>(C) CONFIGURACION</p>
@@ -17,6 +12,7 @@
                 <p>(E) AYUDA</p>
                 <p>(F) DATOS SOLARES</p>
                 <p>ESTADO DEL ROBOT</p>
+                   
             </div>
             <div id="colum">
                 <p>(H) GRIDTRACKER</p>
@@ -42,6 +38,6 @@
             </div>
         </div>
     </div>
-</body>
+';
+?>
 
-</html>
