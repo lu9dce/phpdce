@@ -25,6 +25,7 @@
                 <p>(K) CLIMA</p>
                 <p>(L) MAPA INTERACTIVO</p>
                 <p>(X) BLOCK DE NOTAS</p>
+                <p>(Z) POSICION SOL Y LUNA</p>
             </div>
         </div>
     </div>
