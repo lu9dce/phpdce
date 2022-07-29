@@ -1,9 +1,13 @@
 <?php
-/*
+/***********************************
 * CREADO POR LU9DCE
-* Copyright 2022 eduardo <eduardo@ELEMENTAL>
-*
-*/
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+
+// .-.. ..- ----. -.. -.-. . 
 
 // genera el texto que se enviara al aprs
 $at = "DX $call $freq $mode Send $rst_sent Rcvd $rst_rcvd $dxcomen";

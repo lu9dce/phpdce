@@ -1,9 +1,13 @@
 <?php
-/*
+/***********************************
 * CREADO POR LU9DCE
-* Copyright 2022 eduardo <eduardo@ELEMENTAL>
-*
-*/
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+
+// .-.. ..- ----. -.. -.-. . 
 
 // url de envio hacia log de argentina
 $arg = "https://www.logdeargentina.com.ar/php/subeqso2.php?user=$argenuser&pass=$argenpass&micall=$station_callsign&sucall=$call&banda=$band&modo=$mode&fecha=$qso_date&hora=$time_on&rst=$rst_sent";

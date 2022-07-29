@@ -1,9 +1,13 @@
 <?php
-/*
+/***********************************
 * CREADO POR LU9DCE
-* Copyright 2022 eduardo <eduardo@ELEMENTAL>
-*
-*/
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+
+// .-.. ..- ----. -.. -.-. . 
 
 // zona horaria
 date_default_timezone_set( 'UTC' );

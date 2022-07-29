@@ -1,9 +1,13 @@
 <?php
-/*
+/***********************************
 * CREADO POR LU9DCE
-* Copyright 2022 eduardo <eduardo@ELEMENTAL>
-*
-*/
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+
+// .-.. ..- ----. -.. -.-. . 
 
 // url con usuario y password de phpdce ( free ) consulta id
 $qrx = "https://www.hamqth.com/xml.php?u=xx0php&p=phpdce";
