@@ -1,5 +1,9 @@
 # PHPDCE
 
+ <img src="https://gitlab.com/radioactividad/phpdce/-/wikis/uploads/f689221a4806a27c4462c60aae8def48/FYtP279WQAEwJ3M.png" width="350">
+
+
+
 programa que procesa el adi de forma automática en tiempo real
 
 Este soft es de codigo abierto
