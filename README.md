@@ -14,6 +14,10 @@ Con lo que puedas! sera de mucha ayuda
 
 -----------------
 
+Manual en (https://gitlab.com/radioactividad/phpdce/-/wikis/home)
+
+-----------------
+
 Trabaja con wsjt-x / wsjt-z / jtdx
 
 procesado el adi en tiempo real
@@ -35,6 +39,14 @@ es capaz de subir el contacto realizado a
 todo esto de forma automática - incluye un panel de control
 
 y la posibilidad de agregar un contacto a mano
+
+-----------------
+
+Si PHP o el FrontEnd falla por falta de una libreria de windows
+
+usa Microsoft Visual C++ Redistributable
+
+(https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 -----------------
 
@@ -71,5 +83,7 @@ Tus ideas pueden ser la solucion al problema de otro intentare ayudarte
 * K1JT (https://sourceforge.net/projects/wsjt/)
 
 * FrontEnd (https://github.com/cztomczak/phpdesktop)
+
+* PHPMailer (https://github.com/PHPMailer/PHPMailer)
 
 
