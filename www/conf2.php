@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<?php include 'C:\\phpdce\\usr\\variables.php'; ?>
-    <html>
-
+<?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
+include 'C:\\phpdce\\usr\\variables.php';
+$hadiwsjt = htmlspecialchars( $adiwsjt );
+echo '
     <head>
-        <title>conf2</title>
         <link rel="stylesheet" href="theme/form.css">
     </head>
-
-    <body>
         <a href="conf1.php" target="_self">datos</a>
         <a href="conf2.php" target="_self">adi</a>
         <a href="conf3.php" target="_self">cluster</a>
@@ -24,33 +29,29 @@
         <br>
         <form method="post">
             <h2>Ubicacion del ADI</h2> ADI
-            <input title="MUY IMPORTATE! (EJ C:\Users\eduardo\AppData\Local\WSJT-X\wsjtx_log.adi)" type="text" name="adiwsjt" size="50" value="<?php echo htmlspecialchars($adiwsjt); ?>" />
+            <input title="MUY IMPORTATE! (EJ C:\Users\eduardo\AppData\Local\WSJT-X\wsjtx_log.adi)" type="text" name="adiwsjt" size="50" value="'.$hadiwsjt.'" />
             <br>
             <p>Nomalmente WSJT y JTDX estan en %localappdata%</p>
             <br>
             <input type="submit" name="submit">
         </form>
-    </body>
-
-    </html>
-    <?php
-if(isset($_POST['adiwsjt']))
-{
-$data1=$_POST['adiwsjt'];
-$data1 = explode ("\\", $data1);
-$data1 = implode ('\\\\', $data1);
-$adiwsjt = explode ("\\", $adiwsjt);
-$adiwsjt = implode ('\\\\', $adiwsjt);
-$str = file_get_contents('C:\\phpdce\\usr\\variables.php');
-$oldContent='$adiwsjt = "'.$adiwsjt.'";';
-$newContent='$adiwsjt = "'.$data1.'";';
-$str = str_replace($oldContent, $newContent, $str);
-if ($adiwsjt != $data1) {
-    echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
-    file_put_contents('C:\\phpdce\\usr\\variables.php', $str);
-} else {
-    echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
-}
-header("Refresh:5");
+';
+if ( isset( $_POST['adiwsjt'] ) ) {
+    $data1 = $_POST['adiwsjt'];
+    $data1 = explode ( "\\", $data1 );
+    $data1 = implode ( '\\\\', $data1 );
+    $adiwsjt = explode ( "\\", $adiwsjt );
+    $adiwsjt = implode ( '\\\\', $adiwsjt );
+    $str = file_get_contents( 'C:\\phpdce\\usr\\variables.php' );
+    $oldContent = '$adiwsjt = "'.$adiwsjt.'";';
+    $newContent = '$adiwsjt = "'.$data1.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    if ( $adiwsjt != $data1 ) {
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
+    } else {
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+    }
+    header( "Refresh:5" );
 }
 ?>

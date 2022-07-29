@@ -6,27 +6,20 @@
 * GNU AFFERO GENERAL PUBLIC LICENSE
 * Version 3, 19 November 2007
 ***********************************/
-
 // .-.. ..- ----. -.. -.-. . 
-
 // selecciona hora a utc
 date_default_timezone_set( 'UTC' );
-
 // datos para la qsl
 $at = "DX $call $freq $mode Send $rst_sent Rcvd $rst_rcvd $dxcomen";
-
 // formato del dia y hora
 $hora = date( DATE_RFC850 );
-
 // tipo de letra
 $fontFile = realpath( 'C:\\Windows\\Fonts\\Arial.ttf' );
-
 // crea un fondo al azar ( 800x600 )
 if ( $fondo == "azar" ) {
     file_put_contents( $dirt.'tmp\\random.jpg', file_get_contents( 'https://unsplash.it/800/600' ) );
     $fondo = $dirt.'tmp\\random.jpg';
 }
-
 // crea la qsl con el texto a 800x600
 $im = imagecreatetruecolor( 800, 600 );
 $aa = imagecreatefromjpeg( $fondo );
@@ -35,7 +28,6 @@ imagecopyresized( $im, $aa, 0, 0, 0, 0, 800, 600, $w, $h );
 $color = imagecolorallocate( $im, 0, 0, 110 );
 $color = imagecolorallocatealpha( $im, 0, 0, 0, 30 );
 imagefilledrectangle( $im, 0, 400, 800, 550, $color );
-
 // genera texto negro y arriba blanco ( simula sombra )
 $cc = 0;
 for ( $a = 0; $a <= 2; $a += 2 ) {
@@ -49,12 +41,9 @@ for ( $a = 0; $a <= 2; $a += 2 ) {
     imagettftext( $im, 30, 0, 30, 350+$a, $color, $fontFile, $malname );
     $cc = 255;
 }
-
 // guarda la imagen generada
 imagejpeg( $im, $dirt.'tmp\\qsl.jpg' );
-
 // limpia ram
 imagedestroy( $im );
 unlink ( $dirt.'tmp\\random.jpg' );
-
 ?>

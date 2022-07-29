@@ -1,4 +1,12 @@
 <?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
 echo '<head><link rel="stylesheet" href="theme/styles.css"></head>';
 $dirt = "C:\\phpdce\\";
 date_default_timezone_set( 'UTC' );

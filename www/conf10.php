@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<?php include 'C:\\phpdce\\usr\\variables.php'; ?>
-    <html>
-
+<?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
+include 'C:\\phpdce\\usr\\variables.php';
+$hactivaqth = htmlspecialchars( $activaqth );
+$hhamuser = htmlspecialchars( $hamuser );
+$hhampass = htmlspecialchars( $hampass );
+echo '
     <head>
-        <title>conf10</title>
         <link rel="stylesheet" href="theme/form.css">
     </head>
-
-    <body>
         <a href="conf1.php" target="_self">datos</a>
         <a href="conf2.php" target="_self">adi</a>
         <a href="conf3.php" target="_self">cluster</a>
@@ -24,40 +31,35 @@
         <br>
         <form method="post">
             <h2>HAMQTH</h2> ACTIVO
-            <input title="ENTRE si O no EN minuscula" type="text" name="activaqth" size="50" value="<?php echo htmlspecialchars($activaqth); ?>" />
+            <input title="ENTRE si O no EN minuscula" type="text" name="activaqth" size="50" value="'.$hactivaqth.'" />
             <br> USUARIO
-            <input title="SUELE SER SU LICENCIA" type="text" name="hamuser" size="50" value="<?php echo htmlspecialchars($hamuser); ?>" />
+            <input title="SUELE SER SU LICENCIA" type="text" name="hamuser" size="50" value="'.$hhamuser.'" />
             <br> PASSWORD
-            <input title="PASSWORD?" type="password" name="hampass" size="50" value="<?php echo htmlspecialchars($hampass); ?>" />
+            <input title="PASSWORD?" type="password" name="hampass" size="50" value="'.$hhampass.'" />
             <br>
             <br>
             <input type="submit" name="submit">
-        </form>
-    </body>
-
-    </html>
-    <?php
-if(isset($_POST['activaqth']))
-{
-$data1=$_POST['activaqth'];
-$data2=$_POST['hamuser'];
-$data3=$_POST['hampass'];
-$str = file_get_contents('C:\\phpdce\\usr\\variables.php');
-$oldContent='$activaqth = "'.$activaqth.'";';
-$newContent='$activaqth = "'.$data1.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$hamuser = "'.$hamuser.'";';
-$newContent='$hamuser = "'.$data2.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$hampass = "'.$hampass.'";';
-$newContent='$hampass = "'.$data3.'";';
-$str = str_replace($oldContent, $newContent, $str);
-if (($activaqth != $data1)||($hamuser != $data2)||($hampass != $data3)) {
-    echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
-    file_put_contents('C:\\phpdce\\usr\\variables.php', $str);
-} else {
-    echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
-}
-header("Refresh:5");
+';
+if ( isset( $_POST['activaqth'] ) ) {
+    $data1 = $_POST['activaqth'];
+    $data2 = $_POST['hamuser'];
+    $data3 = $_POST['hampass'];
+    $str = file_get_contents( 'C:\\phpdce\\usr\\variables.php' );
+    $oldContent = '$activaqth = "'.$activaqth.'";';
+    $newContent = '$activaqth = "'.$data1.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$hamuser = "'.$hamuser.'";';
+    $newContent = '$hamuser = "'.$data2.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$hampass = "'.$hampass.'";';
+    $newContent = '$hampass = "'.$data3.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    if ( ( $activaqth != $data1 ) || ( $hamuser != $data2 ) || ( $hampass != $data3 ) ) {
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
+    } else {
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+    }
+    header( "Refresh:5" );
 }
 ?>

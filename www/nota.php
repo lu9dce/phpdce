@@ -1,4 +1,12 @@
 <?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
 $no = file_get_contents( "nota.txt" );
 echo '
 <h2 style="color: #55ffff;">Notas rapidas</h2>

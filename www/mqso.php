@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<?php include 'C:\\phpdce\\usr\\variables.php'; ?>
-    <html>
-
+<?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. . 
+include 'C:\\phpdce\\usr\\variables.php';
+echo '
     <head>
-        <title>manual qso</title>
         <link rel="stylesheet" href="theme/form.css">
     </head>
-
-    <body>
         <form method="post">
             <h2>QSO MANUAL</h2>
             <table>
@@ -49,10 +53,7 @@
             <br>
             <input type="submit" name="submit">
         </form>
-    </body>
-
-    </html>
-    <?php
+';
 date_default_timezone_set('UTC');
 if(isset($_POST['call']))
 {

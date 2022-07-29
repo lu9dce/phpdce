@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<?php include 'C:\\phpdce\\usr\\variables.php'; ?>
-    <html>
-
+<?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
+include 'C:\\phpdce\\usr\\variables.php';
+$hactivaarg = htmlspecialchars( $activaarg );
+$hargenuser = htmlspecialchars( $argenuser );
+$hargenpass = htmlspecialchars( $argenpass );
+echo '
     <head>
-        <title>conf8</title>
         <link rel="stylesheet" href="theme/form.css">
     </head>
-
-    <body>
         <a href="conf1.php" target="_self">datos</a>
         <a href="conf2.php" target="_self">adi</a>
         <a href="conf3.php" target="_self">cluster</a>
@@ -24,40 +31,36 @@
         <br>
         <form method="post">
             <h2>LOG DE ARGENTINA</h2> ACTIVO
-            <input title="ENTRE si O no EN minuscula" type="text" name="activaarg" size="50" value="<?php echo htmlspecialchars($activaarg); ?>" />
+            <input title="ENTRE si O no EN minuscula" type="text" name="activaarg" size="50" value="'.$hactivaarg.'" />
             <br> USUARIO
-            <input title="SUELE SER EL MAIL" type="text" name="argenuser" size="50" value="<?php echo htmlspecialchars($argenuser); ?>" />
+            <input title="SUELE SER EL MAIL" type="text" name="argenuser" size="50" value="'.$hargenuser.'" />
             <br> PASSWORD
-            <input title="PASSWORD?" type="password" name="argenpass" size="50" value="<?php echo htmlspecialchars($argenpass); ?>" />
+            <input title="PASSWORD?" type="password" name="argenpass" size="50" value="'.$hargenpass.'" />
             <br>
             <br>
             <input type="submit" name="submit">
         </form>
-    </body>
-
-    </html>
-    <?php
-if(isset($_POST['activaarg']))
-{
-$data1=$_POST['activaarg'];
-$data2=$_POST['argenuser'];
-$data3=$_POST['argenpass'];
-$str = file_get_contents('C:\\phpdce\\usr\\variables.php');
-$oldContent='$activaarg = "'.$activaarg.'";';
-$newContent='$activaarg = "'.$data1.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$argenuser = "'.$argenuser.'";';
-$newContent='$argenuser = "'.$data2.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$argenpass = "'.$argenpass.'";';
-$newContent='$argenpass = "'.$data3.'";';
-$str = str_replace($oldContent, $newContent, $str);
-if (($activaarg != $data1)||($argenuser != $data2)||($argenpass != $data3)) {
-    echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
-    file_put_contents('C:\\phpdce\\usr\\variables.php', $str);
-} else {
-    echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
-}
-header("Refresh:5");
+';
+if ( isset( $_POST['activaarg'] ) ) {
+    $data1 = $_POST['activaarg'];
+    $data2 = $_POST['argenuser'];
+    $data3 = $_POST['argenpass'];
+    $str = file_get_contents( 'C:\\phpdce\\usr\\variables.php' );
+    $oldContent = '$activaarg = "'.$activaarg.'";';
+    $newContent = '$activaarg = "'.$data1.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$argenuser = "'.$argenuser.'";';
+    $newContent = '$argenuser = "'.$data2.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$argenpass = "'.$argenpass.'";';
+    $newContent = '$argenpass = "'.$data3.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    if ( ( $activaarg != $data1 ) || ( $argenuser != $data2 ) || ( $argenpass != $data3 ) ) {
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
+    } else {
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+    }
+    header( "Refresh:5" );
 }
 ?>

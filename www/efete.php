@@ -1,4 +1,12 @@
 <?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
 echo '
     <style>
         .dot1 {
@@ -9,7 +17,6 @@ echo '
             display: inline-block;
             text-align: center;
         }
-        
         .dot0 {
             height: 25px;
             width: 25px;
@@ -18,7 +25,6 @@ echo '
             display: inline-block;
             text-align: center;
         }
-
     </style>
 </head>
 ';

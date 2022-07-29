@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<?php include 'C:\\phpdce\\usr\\variables.php'; ?>
-    <html>
-
+<?php
+/***********************************
+* CREADO POR LU9DCE
+* Copyright 2022 Eduardo Castillo
+* castilloeduardo@outlook.com
+* GNU AFFERO GENERAL PUBLIC LICENSE
+* Version 3, 19 November 2007
+***********************************/
+// .-.. ..- ----. -.. -.-. .
+include 'C:\\phpdce\\usr\\variables.php';
+$hactivaeqsl = htmlspecialchars( $activaeqsl );
+$heqsluser = htmlspecialchars( $eqsluser );
+$heqslpass = htmlspecialchars( $eqslpass );
+echo '
     <head>
-        <title>conf4</title>
         <link rel="stylesheet" href="theme/form.css">
     </head>
-
-    <body>
         <a href="conf1.php" target="_self">datos</a>
         <a href="conf2.php" target="_self">adi</a>
         <a href="conf3.php" target="_self">cluster</a>
@@ -24,40 +31,36 @@
         <br>
         <form method="post">
             <h2>EQSL</h2> ACTIVO
-            <input title="ENTRE si O no EN minuscula" type="text" name="activaeqsl" size="50" value="<?php echo htmlspecialchars($activaeqsl); ?>" />
+            <input title="ENTRE si O no EN minuscula" type="text" name="activaeqsl" size="50" value="'.$hactivaeqsl.'" />
             <br> USUARIO
-            <input title="SU USUARIO DE EQSL" type="text" name="eqsluser" size="50" value="<?php echo htmlspecialchars($eqsluser); ?>" />
+            <input title="SU USUARIO DE EQSL" type="text" name="eqsluser" size="50" value="'.$heqsluser.'" />
             <br> PASSWORD
-            <input title="PASSWORD?" type="password" name="eqslpass" size="50" value="<?php echo htmlspecialchars($eqslpass); ?>" />
+            <input title="PASSWORD?" type="password" name="eqslpass" size="50" value="'.$heqslpass.'" />
             <br>
             <br>
             <input type="submit" name="submit">
         </form>
-    </body>
-
-    </html>
-    <?php
-if(isset($_POST['activaeqsl']))
-{
-$data1=$_POST['activaeqsl'];
-$data2=$_POST['eqsluser'];
-$data3=$_POST['eqslpass'];
-$str = file_get_contents('C:\\phpdce\\usr\\variables.php');
-$oldContent='$activaeqsl = "'.$activaeqsl.'";';
-$newContent='$activaeqsl = "'.$data1.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$eqsluser = "'.$eqsluser.'";';
-$newContent='$eqsluser = "'.$data2.'";';
-$str = str_replace($oldContent, $newContent, $str);
-$oldContent='$eqslpass = "'.$eqslpass.'";';
-$newContent='$eqslpass = "'.$data3.'";';
-$str = str_replace($oldContent, $newContent, $str);
-if (($activaeqsl != $data1)||($eqsluser != $data2)||($eqslpass != $data3)) {
-    echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
-    file_put_contents('C:\\phpdce\\usr\\variables.php', $str);
-} else {
-    echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
-}
-header("Refresh:5");
+';
+if ( isset( $_POST['activaeqsl'] ) ) {
+    $data1 = $_POST['activaeqsl'];
+    $data2 = $_POST['eqsluser'];
+    $data3 = $_POST['eqslpass'];
+    $str = file_get_contents( 'C:\\phpdce\\usr\\variables.php' );
+    $oldContent = '$activaeqsl = "'.$activaeqsl.'";';
+    $newContent = '$activaeqsl = "'.$data1.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$eqsluser = "'.$eqsluser.'";';
+    $newContent = '$eqsluser = "'.$data2.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    $oldContent = '$eqslpass = "'.$eqslpass.'";';
+    $newContent = '$eqslpass = "'.$data3.'";';
+    $str = str_replace( $oldContent, $newContent, $str );
+    if ( ( $activaeqsl != $data1 ) || ( $eqsluser != $data2 ) || ( $eqslpass != $data3 ) ) {
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
+    } else {
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+    }
+    header( "Refresh:5" );
 }
 ?>

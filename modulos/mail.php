@@ -6,12 +6,9 @@
 * GNU AFFERO GENERAL PUBLIC LICENSE
 * Version 3, 19 November 2007
 ***********************************/
-
 // .-.. ..- ----. -.. -.-. . 
-
 // hora del sistema a utc
 date_default_timezone_set( 'UTC' );
-
 // prepara el sistema smtp
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -19,7 +16,6 @@ use PHPMailer\PHPMailer\Exception;
 require 'C:\\phpdce\\modulos\\PHPMailer\\src\\Exception.php';
 require 'C:\\phpdce\\modulos\\PHPMailer\\src\\PHPMailer.php';
 require 'C:\\phpdce\\modulos\\PHPMailer\\src\\SMTP.php';
-
 // busqueda por qrz activa?
 if ( $fqrz == "si" ) {
     $qrx = "https://xmldata.qrz.com/xml/current/?username=$qrzuser;password=$qrzpass;callsign=$call";
@@ -32,7 +28,6 @@ if ( $fqrz == "si" ) {
     $malmail = $xml->Callsign->email;
     $malname = $xml->Callsign->fname;
 }
-
 // busqueda por hamqth activa?
 if ( $fhamqth == "si" ) {
     include $dirt.'modulos\\busq.php';
@@ -41,7 +36,6 @@ if ( $fhamqth == "si" ) {
     $malmail = $xml->search->email;
     $malname = $xml->search->nick;
 }
-
 // si exite una direccion de mail crea qsl y envia
 if ( strlen( $malmail ) != "0" ) {
     include $dirt.'modulos\\qsl.php';
