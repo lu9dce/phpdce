@@ -84,4 +84,6 @@ Tus ideas pueden ser la solucion al problema de otro intentare ayudarte
 
 * FrontEnd (https://github.com/cztomczak/phpdesktop)
 
+* PHPMailer (https://github.com/PHPMailer/PHPMailer)
+
 
