@@ -38,6 +38,14 @@ y la posibilidad de agregar un contacto a mano
 
 -----------------
 
+Si PHP o el FrontEnd falla por falta de una libreria de windows
+
+usa Microsoft Visual C++ Redistributable
+
+(https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+-----------------
+
 ## Puede consultar por mas informacion via mail a lu9dce@gmx.com
 
 -----------------
