@@ -1,3 +1,0 @@
-[30-Jul-2022 14:52:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "." in C:\phpdce\www\index.php on line 17
-[30-Jul-2022 15:10:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in C:\phpdce\www\conf1.php on line 20
-[30-Jul-2022 15:22:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ":", expecting "," or ";" in C:\phpdce\www\conf6.php on line 13
