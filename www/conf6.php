@@ -8,41 +8,35 @@
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
 include 'C:\\phpdce\\usr\\variables.php';
-$hactivaclub = htmlspecialchars( $activaclub );
-$hclubuser = htmlspecialchars( $clubuser );
-$hclubmail = htmlspecialchars( $clubmail );
-$hclubpass = htmlspecialchars( $clubpass );
 echo '
-    <head>
-        <link rel="stylesheet" href="theme/form.css">
-    </head>
-        <a href="conf1.php" target="_self">datos</a>
-        <a href="conf2.php" target="_self">adi</a>
-        <a href="conf3.php" target="_self">cluster</a>
-        <a href="conf4.php" target="_self">eqsl</a>
-        <a href="conf5.php" target="_self">aprs</a>
-        <a href="conf6.php" target="_self">clublog</a>
-        <a href="conf7.php" target="_self">hdrlog</a>
-        <a href="conf8.php" target="_self">arglog</a>
-        <a href="conf9.php" target="_self">qrz</a>
-        <a href="conf10.php" target="_self">hamqth</a>
-        <a href="conf11.php" target="_self">lotw</a>
-        <a href="conf12.php" target="_self">mail</a>
-        <a href="conf13.php" target="_self">motor</a>
-        <br>
-        <form method="post">
-            <h2>CLUB LOG</h2> ACTIVO
-            <input title="ENTRE si O no EN minuscula" type="text" name="activaclub" size="50" value="'.$hactivaclub.'" />
-            <br> USUARIO
-            <input title="SU USUARIO" type="text" name="clubuser" size="50" value="'.$hclubuser.'" />
-            <br> MAIL
-            <input title="EMAIL DE REGISTRO DE CLUBLOG" type="text" name="clubmail" size="50" value="'.$hclubmail.'" />
-            <br> PASSWORD
-            <input title="PASSWORD?" type="password" name="clubpass" size="50" value="'.$hclubpass.'" />
-            <br>
-            <br>
-            <input type="submit" name="submit">
-        </form>
+<head><link rel="stylesheet" href="theme/form.css"></head>
+<a href="conf1.php" target="_self">datos</a>
+<a href="conf2.php" target="_self">adi</a>
+<a href="conf3.php" target="_self">cluster</a>
+<a href="conf4.php" target="_self">eqsl</a>
+<a href="conf5.php" target="_self">aprs</a>
+<a href="conf6.php" target="_self">clublog</a>
+<a href="conf7.php" target="_self">hdrlog</a>
+<a href="conf8.php" target="_self">arglog</a>
+<a href="conf9.php" target="_self">qrz</a>
+<a href="conf10.php" target="_self">hamqth</a>
+<a href="conf11.php" target="_self">lotw</a>
+<a href="conf12.php" target="_self">mail</a>
+<a href="conf13.php" target="_self">motor</a>
+<br>
+<form method="post">
+<h2>CLUB LOG</h2> ACTIVO
+<input title="ENTRE si O no EN minuscula" type="text" name="activaclub" size="50" value="'.htmlspecialchars( $activaclub ).'" />
+<br> USUARIO
+<input title="SU USUARIO" type="text" name="clubuser" size="50" value="'.htmlspecialchars( $clubuser ).'" />
+<br> MAIL
+<input title="EMAIL DE REGISTRO DE CLUBLOG" type="text" name="clubmail" size="50" value="'.htmlspecialchars( $clubmail ).'" />
+<br> PASSWORD
+<input title="PASSWORD?" type="password" name="clubpass" size="50" value="'.htmlspecialchars( $clubpass ).'" />
+<br>
+<br>
+<input type="submit" name="submit">
+</form>
 ';
 if ( isset( $_POST['activaclub'] ) ) {
     $data1 = $_POST['activaclub'];

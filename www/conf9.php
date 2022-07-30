@@ -8,41 +8,35 @@
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
 include 'C:\\phpdce\\usr\\variables.php';
-$hactivaqrz = htmlspecialchars( $activaqrz );
-$hqrzuser = htmlspecialchars( $qrzuser );
-$hqrzpass = htmlspecialchars( $qrzpass );
-$hqrzkey = htmlspecialchars( $qrzkey );
 echo '
-<head>
-    <link rel="stylesheet" href="theme/form.css">
-</head>
-    <a href="conf1.php" target="_self">datos</a>
-    <a href="conf2.php" target="_self">adi</a>
-    <a href="conf3.php" target="_self">cluster</a>
-    <a href="conf4.php" target="_self">eqsl</a>
-    <a href="conf5.php" target="_self">aprs</a>
-    <a href="conf6.php" target="_self">clublog</a>
-    <a href="conf7.php" target="_self">hdrlog</a>
-    <a href="conf8.php" target="_self">arglog</a>
-    <a href="conf9.php" target="_self">qrz</a>
-    <a href="conf10.php" target="_self">hamqth</a>
-    <a href="conf11.php" target="_self">lotw</a>
-    <a href="conf12.php" target="_self">mail</a>
-    <a href="conf13.php" target="_self">motor</a>
-    <br>
-    <form method="post">
-        <h2>QRZ.COM</h2> ACTIVO
-        <input title="ENTRE si O no EN minuscula" type="text" name="activaqrz" size="50" value="'.$hactivaqrz.'" />
-        <br> USUARIO
-        <input title="SUELE SER SU LICENCIA" type="text" name="qrzuser" size="50" value="'.$hqrzuser.'" />
-        <br> PASSWORD
-        <input title="PASSWORD?" type="password" name="qrzpass" size="50" value="'.$hqrzpass.'" />
-        <br> KEY
-        <input title="KEY SOLO LO DAN A CUENTAS PAGAS" type="text" name="qrzkey" size="50" value="'.$hqrzkey.'" />
-        <br>
-        <br>
-        <input type="submit" name="submit">
-    </form>
+<head><link rel="stylesheet" href="theme/form.css"></head>
+<a href="conf1.php" target="_self">datos</a>
+<a href="conf2.php" target="_self">adi</a>
+<a href="conf3.php" target="_self">cluster</a>
+<a href="conf4.php" target="_self">eqsl</a>
+<a href="conf5.php" target="_self">aprs</a>
+<a href="conf6.php" target="_self">clublog</a>
+<a href="conf7.php" target="_self">hdrlog</a>
+<a href="conf8.php" target="_self">arglog</a>
+<a href="conf9.php" target="_self">qrz</a>
+<a href="conf10.php" target="_self">hamqth</a>
+<a href="conf11.php" target="_self">lotw</a>
+<a href="conf12.php" target="_self">mail</a>
+<a href="conf13.php" target="_self">motor</a>
+<br>
+<form method="post">
+<h2>QRZ.COM</h2> ACTIVO
+<input title="ENTRE si O no EN minuscula" type="text" name="activaqrz" size="50" value="'.htmlspecialchars( $activaqrz ).'" />
+<br> USUARIO
+<input title="SUELE SER SU LICENCIA" type="text" name="qrzuser" size="50" value="'.htmlspecialchars( $qrzuser ).'" />
+<br> PASSWORD
+<input title="PASSWORD?" type="password" name="qrzpass" size="50" value="'.htmlspecialchars( $qrzpass ).'" />
+<br> KEY
+<input title="KEY SOLO LO DAN A CUENTAS PAGAS" type="text" name="qrzkey" size="50" value="'.htmlspecialchars( $qrzkey ).'" />
+<br>
+<br>
+<input type="submit" name="submit">
+</form>
 ';
 if ( isset( $_POST['activaqrz'] ) ) {
     $data1 = $_POST['activaqrz'];
