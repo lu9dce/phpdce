@@ -3,8 +3,6 @@
  <img src="https://gitlab.com/radioactividad/phpdce/-/wikis/uploads/f689221a4806a27c4462c60aae8def48/FYtP279WQAEwJ3M.png" width="350">
 
 
-* Grupo y Soporte -> https://www.facebook.com/groups/phpdce
-
 programa que procesa el adi de forma automática en tiempo real
 
 Este soft es de codigo abierto
@@ -16,6 +14,8 @@ te pido una donacion via paypal
 ( https://www.paypal.com/donate/?hosted_button_id=R4ZEK2ELYEYUN )
 
 Con lo que puedas! sera de mucha ayuda
+
+* Grupo y Soporte - https://www.facebook.com/groups/phpdce
 
 -----------------
 
