@@ -15,7 +15,9 @@ I did it with a lot of effort if it is in your possibilities I ask you for a don
 With what you can! it's going to help a lot<br>
 ( https://www.paypal.com/donate/?hosted_button_id=R4ZEK2ELYEYUN )
 
-* Grupo y Soporte (Group and Support) - https://www.facebook.com/groups/phpdce
+
+* Grupo y Soporte (Group and Support) - https://www.facebook.com/groups/phpdce<br>
+If you decide to use it enter the group so we have a reference of how everything works and give me your opinion
 
 -----------------
 
