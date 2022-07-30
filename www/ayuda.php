@@ -7,11 +7,11 @@
 * Version 3, 19 November 2007
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
-echo'
-<head><link rel="stylesheet" href="theme/styles.css"></head>
+echo'<head><link rel="stylesheet" href="theme/styles.css"></head>
 <div id="tabletab" class="baseh">
+<br>
 <div id="contenido">
-<div id="colum"><br>
+<div id="colum">
 <p>(A) BOTON DE MONITOREO</p>
 <p>(B) TRAFICO DE WSJT</p>
 <p>(C) CONFIGURACION</p>

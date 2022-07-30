@@ -42,4 +42,5 @@ $usemail = "mail.gmx.com";
 $useport = "587";
 $useuser = "";
 $usepass = "";
+$lng = "es";
 ?>

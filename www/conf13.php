@@ -8,31 +8,12 @@
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
 include 'C:\\phpdce\\usr\\variables.php';
-echo '
-<head><link rel="stylesheet" href="theme/form.css"></head>
-<a href="conf1.php" target="_self">datos</a>
-<a href="conf2.php" target="_self">adi</a>
-<a href="conf3.php" target="_self">cluster</a>
-<a href="conf4.php" target="_self">eqsl</a>
-<a href="conf5.php" target="_self">aprs</a>
-<a href="conf6.php" target="_self">clublog</a>
-<a href="conf7.php" target="_self">hdrlog</a>
-<a href="conf8.php" target="_self">arglog</a>
-<a href="conf9.php" target="_self">qrz</a>
-<a href="conf10.php" target="_self">hamqth</a>
-<a href="conf11.php" target="_self">lotw</a>
-<a href="conf12.php" target="_self">mail</a>
-<a href="conf13.php" target="_self">motor</a>
-<br>
-<form method="post">
-<h2>BUSQUEDA DATOS DE QSO ELIJA SOLO 1</h2> HAMQTH
-<input title="ENTRE si O no EN minuscula (GRATIS)" type="text" name="fhamqth" size="50" value="'.htmlspecialchars( $fhamqth ).'" />
-<br> QRZ
-<input title="ENTRE si O no EN minuscula (PAGO)" type="text" name="fqrz" size="50" value="'.htmlspecialchars( $fqrz ).'" />
-<br>
-<br>
-<input type="submit" name="submit">
-';
+include 'C:\\phpdce\\www\\confx.php';
+echo '<form method="post">';
+echo '<h2>BUSQUEDA DATOS DE QSO ELIJA SOLO 1</h2>';
+echo 'HAMQTH <input title="ENTRE si O no EN minuscula (GRATIS)" type="text" name="fhamqth" size="50" value="'.htmlspecialchars( $fhamqth ).'" /><br>';
+echo 'QRZ <input title="ENTRE si O no EN minuscula (PAGO)" type="text" name="fqrz" size="50" value="'.htmlspecialchars( $fqrz ).'" /><br>';
+echo '<br><input type="submit" name="submit">';
 if ( isset( $_POST['fhamqth'] ) ) {
     $data1 = $_POST['fhamqth'];
     $data2 = $_POST['fqrz'];

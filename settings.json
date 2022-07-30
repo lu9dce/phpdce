@@ -10,7 +10,7 @@
         "log_file": "debug.log"
     },
     "main_window": {
-        "title": "PHP DCE PANEL",
+        "title": "PHPDCE by LU9DCE",
         "icon": "logo.ico",
         "default_size": [753, 560],
         "minimum_size": [753, 560],
@@ -38,6 +38,9 @@
         "cgi_temp_dir": "",
         "404_handler": "/pretty-urls.php",
         "hide_files": []
+    },
+    "command_line_switches": {
+    "lang": "es",
     },
     "chrome": {
         "log_file": "debug.log",
