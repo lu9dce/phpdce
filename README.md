@@ -2,7 +2,7 @@
 
 <img src="https://gitlab.com/radioactividad/phpdce/-/wikis/uploads/f689221a4806a27c4462c60aae8def48/FYtP279WQAEwJ3M.png" width="350">
 
-<pre><b>Move to https://gitlab.com/radioactividad/phpdce</b></pre>
+<h1><b>Move to https://gitlab.com/radioactividad/phpdce</b></h1>
 
 <b>program that processes the adi automatically in real time</b><br>
 
