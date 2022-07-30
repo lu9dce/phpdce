@@ -8,11 +8,11 @@
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
 echo '<body style="color: #cccccc; background-color: #320000;" alink="#000099" vlink="#990099" link="#cccccc">';
-echo '<p>Se produjo un error</p><br>';
-echo '<h1>Configure su wsjt o jtdx<br>';
-echo 'para que procese el archivo<br>';
+echo '<p>There was an error</p><br>';
+echo '<h1>Configure your wsjt or jtdx<br>';
+echo 'to process the file<br>';
 echo 'ALL.TXT</h1><br>':
-echo '<p>Soporte tecnico : castilloeduardo@outlook.com.ar</p><br>';
+echo '<p>Technical support : castilloeduardo@outlook.com.ar</p><br>';
 echo '<p>73 - LU9DCE</p><br>';
 echo '</body>';
 ?>

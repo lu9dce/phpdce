@@ -9,7 +9,7 @@
 // .-.. ..- ----. -.. -.-. .
 $no = file_get_contents( "nota.txt" );
 echo '
-<h2 style="color: #55ffff;">Notas rapidas</h2>
+<h2 style="color: #55ffff;">Fast notes</h2>
 <form method="post">
 <textarea name="nota" style=" font-size:24px;" rows="13" cols="43">'.$no.'</textarea>
 <br>

@@ -18,9 +18,9 @@ if ( $phpdce == false ) {
 }
 // existe el adi?
 if ( file_exists( $adiwsjt ) ) {
-    echo '<span title="ROBOT (VERDE OK / ROJO ERROR)" class="dot1"></span>';
+    echo '<span class="dot1"></span>';
 } else {
-    echo '<span title="ROBOT (VERDE OK / ROJO ERROR)" class="dot0"></span>';
+    echo '<span class="dot0"></span>';
        goto fin;
 }
 // existe el adicontrol?
@@ -145,7 +145,7 @@ fwrite( $myw, $infqth );
 fclose( $myw );
 // crea archivo datos dista.txt
 $dista = distance( $milat, $milng, $qsolat, $qsolng, "K" );
-$dista = "Distancia : ".( int )$dista." Km";
+$dista = "Distance : ".( int )$dista." Km";
 $mya = fopen( $dirt.'tmp\\dista.txt', "w" );
 fwrite( $mya, $dista );
 fclose( $mya );
@@ -161,43 +161,43 @@ $contdx = substr_count( $eex, $cxc );
 fwrite( $myx, $contdx );
 fclose( $myx );
 // comprueba si cluster esta activo y lo ejecuta
-if ( $activacluster == "si" ) {
+if ( $activacluster == "yes" ) {
     include $dirt.'modulos\\cluster.php';
 }
 // comprueba si aprs esta activo y lo ejecuta
-if ( $activaaprs == "si" ) {
+if ( $activaaprs == "yes" ) {
     include $dirt.'modulos\\aprs.php';
 }
 // comprueba si eqsl esta activo y lo ejecuta
-if ( $activaeqsl == "si" ) {
+if ( $activaeqsl == "yes" ) {
     include $dirt.'modulos\\eqsl.php';
 }
 // comprueba si clublog esta activo y lo ejecuta
-if ( $activaclub == "si" ) {
+if ( $activaclub == "yes" ) {
     include $dirt.'modulos\\clublog.php';
 }
 // comprueba si hdrlog esta activo y lo ejecuta
-if ( $activahdr == "si" ) {
+if ( $activahdr == "yes" ) {
     include $dirt.'modulos\\hdrlog.php';
 }
 // comprueba si log de argentina esta activo y lo ejecuta
-if ( $activaarg == "si" ) {
+if ( $activaarg == "yes" ) {
     include $dirt.'modulos\\argentina.php';
 }
 // comprueba si qrz esta activo y lo ejecuta
-if ( $activaqrz == "si" ) {
+if ( $activaqrz == "yes" ) {
     include $dirt.'modulos\\qrz.php';
 }
 // comprueba si hamqth de argentina esta activo y lo ejecuta
-if ( $activaqth == "si" ) {
+if ( $activaqth == "yes" ) {
     include $dirt.'modulos\\hamqth.php';
 }
 // comprueba si lotw de argentina esta activo y lo ejecuta
-if ( $activalotw == "si" ) {
+if ( $activalotw == "yes" ) {
     include $dirt.'modulos\\lotw.php';
 }
 // comprueba si mail de argentina esta activo y lo ejecuta
-if ( $sendmail == "si" ) {
+if ( $sendmail == "yes" ) {
     include $dirt.'modulos\\mail.php';
 }
 // hace backup del adi

@@ -11,9 +11,9 @@ include 'C:\\phpdce\\usr\\variables.php';
 include 'C:\\phpdce\\www\\confx.php';
 echo '<form method="post">';
 echo '<h2>HDRLOG</h2>';
-echo 'ACTIVO <input title="ENTRE si O no EN minuscula" type="text" name="activahdr" size="50" value="'.htmlspecialchars( $activahdr ).'" /><br>';
-echo 'USUARIO <input title="USUARIO DE HDRLOG" type="text" name="hdruser" size="50" value="'.htmlspecialchars( $hdruser ).'" /><br>';
-echo 'CODIGO <input title="SU CODIGO (NO PASSWORD)" type="password" name="hdrcode" size="50" value="'.htmlspecialchars( $hdrcode ).'" /><br>';
+echo 'ACTIVE <input title="ENTER yes OR no IN lowercase" type="text" name="activahdr" size="50" value="'.htmlspecialchars( $activahdr ).'" /><br>';
+echo 'USER <input title="HDRLOG USER" type="text" name="hdruser" size="50" value="'.htmlspecialchars( $hdruser ).'" /><br>';
+echo 'CODE <input title="YOUR CODE (NO PASSWORD)" type="password" name="hdrcode" size="50" value="'.htmlspecialchars( $hdrcode ).'" /><br>';
 echo '<br><input type="submit" name="submit"></form>';
 if ( isset( $_POST['activahdr'] ) ) {
     $data1 = $_POST['activahdr'];
@@ -30,10 +30,10 @@ if ( isset( $_POST['activahdr'] ) ) {
     $newContent = '$hdrcode = "'.$data3.'";';
     $str = str_replace( $oldContent, $newContent, $str );
     if ( ( $activahdr != $data1 ) || ( $hdruser != $data2 ) || ( $hdrcode != $data3 ) ) {
-        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESSING PLEASE WAIT</h2>';
         file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
     } else {
-        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NOTHING IS MODIFIED</h2>';
     }
     header( "Refresh:5" );
 }

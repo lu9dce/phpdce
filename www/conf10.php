@@ -11,8 +11,8 @@ include 'C:\\phpdce\\usr\\variables.php';
 include 'C:\\phpdce\\www\\confx.php';
 echo '<form method="post">';
 echo '<h2>HAMQTH</h2>';
-echo 'ACTIVO <input title="ENTRE si O no EN minuscula" type="text" name="activaqth" size="50" value="'.htmlspecialchars( $activaqth ).'" /><br>';
-echo 'USUARIO <input title="SUELE SER SU LICENCIA" type="text" name="hamuser" size="50" value="'.htmlspecialchars( $hamuser ).'" /><br>';
+echo 'ACTIVE <input title="ENTER yes OR no IN lowercase" type="text" name="activaqth" size="50" value="'.htmlspecialchars( $activaqth ).'" /><br>';
+echo 'USER <input title="IT IS USUALLY YOUR LICENSE" type="text" name="hamuser" size="50" value="'.htmlspecialchars( $hamuser ).'" /><br>';
 echo 'PASSWORD <input title="PASSWORD?" type="password" name="hampass" size="50" value="'.htmlspecialchars( $hampass ).'" /><br>';
 echo '<br><input type="submit" name="submit">';
 if ( isset( $_POST['activaqth'] ) ) {
@@ -30,10 +30,10 @@ if ( isset( $_POST['activaqth'] ) ) {
     $newContent = '$hampass = "'.$data3.'";';
     $str = str_replace( $oldContent, $newContent, $str );
     if ( ( $activaqth != $data1 ) || ( $hamuser != $data2 ) || ( $hampass != $data3 ) ) {
-        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESSING PLEASE WAIT</h2>';
         file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
     } else {
-        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NOTHING IS MODIFIED</h2>';
     }
     header( "Refresh:5" );
 }

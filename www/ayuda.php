@@ -12,22 +12,22 @@ echo'<head><link rel="stylesheet" href="theme/styles.css"></head>
 <br>
 <div id="contenido">
 <div id="colum">
-<p>(A) BOTON DE MONITOREO</p>
-<p>(B) TRAFICO DE WSJT</p>
-<p>(C) CONFIGURACION</p>
-<p>(D) AGREGA QSO A MANO</p>
-<p>(E) AYUDA</p>
-<p>(F) DATOS SOLARES</p>
-<p>ESTADO DEL ROBOT</p>
+<p>(A) MONITORING BUTTON</p>
+<p>(B) WSJT TRAFFIC</p>
+<p>(C) CONFIGURATION</p>
+<p>(D) ADD QSO BY HAND</p>
+<p>(E) HELP</p>
+<p>(F) SOLAR DATA</p>
+<p>ROBOT STATUS</p>
 </div>
 <div id="colum">
 <p>(H) GRIDTRACKER</p>
 <p>(I) CLUSTER</p>
-<p>(J) RELOJ</p>
-<p>(K) CLIMA</p>
-<p>(L) MAPA INTERACTIVO</p>
-<p>(X) BLOCK DE NOTAS</p>
-<p>(Z) POSICION SOL Y LUNA</p>
+<p>(J) CLOCK</p>
+<p>(K) WEATHER</p>
+<p>(L) INTERACTIVE MAP</p>
+<p>(X) NOTEPAD</p>
+<p>(Z) SUN AND MOON POSITION</p>
 </div>
 </div>
 </div>
@@ -35,10 +35,10 @@ echo'<head><link rel="stylesheet" href="theme/styles.css"></head>
 <div id="contenido">
 <div id="colum">
 <br>
-<p>Hecho por Eduardo Castillo - castilleduardo@gmail.com</p>
+<p>Made by Eduardo Castillo - castilleduardo@gmail.com</p>
 <br>
-<p>COLABORA CON UNA DONACION</p>
-<p>Selecciona usa CTRL+C y pega en tu navegador</p>
+<p>CONTRIBUTE WITH A DONATION</p>
+<p>Select use CTRL+C and paste into your browser</p>
 <p>https://www.paypal.com/donate/?hosted_button_id=R4ZEK2ELYEYUN</p>
 <br>
 </div>

@@ -10,10 +10,10 @@
 include 'C:\\phpdce\\usr\\variables.php';
 include 'C:\\phpdce\\www\\confx.php';
 echo '<form method="post">';
-echo '<h2>DATOS DEL CLUSTER</h2>';
-echo 'ACTIVO <input title="ENTRE si O no EN minuscula" type="text" name="activacluster" size="50" value="'.htmlspecialchars( $activacluster ).'" /><br>';
-echo 'IP <input title="DIRECCION O IP DEL CLUSTER QUE USA (TELNET)" type="text" name="clustertelnet" size="50" value="'.htmlspecialchars( $clustertelnet ).'" /><br>';
-echo 'PUERTO <input title="PUERTO TELNET" type="text" name="clusterport" size="50" value="'.htmlspecialchars( $clusterport ).'" /><br>';
+echo '<h2>CLUSTER DATA</h2>';
+echo 'ACTIVE <input title="ENTER yes OR no IN lowercase" type="text" name="activacluster" size="50" value="'.htmlspecialchars( $activacluster ).'" /><br>';
+echo 'IP <input title="ADDRESS OR IP OF THE CLUSTER USED (TELNET)" type="text" name="clustertelnet" size="50" value="'.htmlspecialchars( $clustertelnet ).'" /><br>';
+echo 'PORT <input title="PORT TELNET" type="text" name="clusterport" size="50" value="'.htmlspecialchars( $clusterport ).'" /><br>';
 echo '<br><input type="submit" name="submit"></form>';
 if ( isset( $_POST['activacluster'] ) ) {
     $data1 = $_POST['activacluster'];
@@ -30,10 +30,10 @@ if ( isset( $_POST['activacluster'] ) ) {
     $newContent = '$clusterport = "'.$data3.'";';
     $str = str_replace( $oldContent, $newContent, $str );
     if ( ( $activacluster != $data1 ) || ( $clustertelnet != $data2 ) || ( $clusterport != $data3 ) ) {
-        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESSING PLEASE WAIT</h2>';
         file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
     } else {
-        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NOTHING IS MODIFIED</h2>';
     }
     header( "Refresh:5" );
 }

@@ -8,9 +8,9 @@
 ***********************************/
 // .-.. ..- ----. -.. -.-. .
 echo '<body style="color: #cccccc; background-color: #320000;" alink="#000099" vlink="#990099" link="#cccccc">';
-echo '<p>Se produjo un error</p><br>';
-echo '<h1>Usa el boton C para configurar</h1><br>';
-echo '<p>Soporte tecnico : castilloeduardo@outlook.com.ar</p><br>';
+echo '<p>There was an error</p><br>';
+echo '<h1>Use the C button to configure</h1><br>';
+echo '<p>Technical support : castilloeduardo@outlook.com.ar</p><br>';
 echo '<p>73 - LU9DCE</p><br>';
 echo '</body>';
 ?>

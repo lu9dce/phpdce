@@ -36,11 +36,10 @@ $hampass = "";
 $activalotw = "no";
 $sendmail = "no";
 $fondo = "azar";
-$fhamqth = "si";
+$fhamqth = "yes";
 $fqrz = "no";
 $usemail = "mail.gmx.com";
 $useport = "587";
 $useuser = "";
 $usepass = "";
-$lng = "es";
 ?>

@@ -11,9 +11,9 @@ include 'C:\\phpdce\\usr\\variables.php';
 include 'C:\\phpdce\\www\\confx.php';
 echo '<form method="post">';
 echo '<h2>APRS</h2>';
-echo 'ACTIVO <input title="ENTRE si O no EN minuscula" type="text" name="activaaprs" size="50" value="'.htmlspecialchars( $activaaprs ).'" /><br>';
-echo 'CORDENADAS <input title="EJ 3428.20S/05845.35W" type="text" name="aprsqth" size="50" value="'.htmlspecialchars( $aprsqth ).'" /><br>';
-echo 'PASSCODE <input title="EL PASSCODE DE APRS" type="password" name="aprscode" size="50" value="'.htmlspecialchars( $aprscode ).'" /><br>';
+echo 'ACTIVE <input title="ENTER yes OR no IN lowercase" type="text" name="activaaprs" size="50" value="'.htmlspecialchars( $activaaprs ).'" /><br>';
+echo 'COORDINATES <input title="ex 3428.20S/05845.35W" type="text" name="aprsqth" size="50" value="'.htmlspecialchars( $aprsqth ).'" /><br>';
+echo 'PASSCODE <input title="THE APRS PASSCODE" type="password" name="aprscode" size="50" value="'.htmlspecialchars( $aprscode ).'" /><br>';
 echo '<br><input type="submit" name="submit"></form>';
 if ( isset( $_POST['activaaprs'] ) ) {
     $data1 = $_POST['activaaprs'];
@@ -30,10 +30,10 @@ if ( isset( $_POST['activaaprs'] ) ) {
     $newContent = '$aprscode = "'.$data3.'";';
     $str = str_replace( $oldContent, $newContent, $str );
     if ( ( $activaaprs != $data1 ) || ( $aprsqth != $data2 ) || ( $aprscode != $data3 ) ) {
-        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESSING PLEASE WAIT</h2>';
         file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
     } else {
-        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NOTHING IS MODIFIED</h2>';
     }
     header( "Refresh:5" );
 }

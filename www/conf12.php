@@ -11,10 +11,10 @@ include 'C:\\phpdce\\usr\\variables.php';
 include 'C:\\phpdce\\www\\confx.php';
 echo '<form method="post">';
 echo '<h2>MAIL Y QSL</h2>';
-echo 'ACTIVO <input title="ENTRE si O no EN minuscula" type="text" name="sendmail" size="50" value="'.htmlspecialchars( $sendmail ).'" /><br>';
-echo 'FONDO QSL <input title="RUTA COMPLETA O URL CON JPG&#10;(escribe azar para fondos ramdon)" type="text" name="fondo" size="50" value="'.htmlspecialchars( $fondo ).'" /><br>';
-echo 'SMTP <input title="DATOS DE SU SMTP (ATENCION SE RECOMIENDA QUE USE GMX.COM)" type="text" name="usemail" size="50" value="'.htmlspecialchars( $usemail ).'" /><br>';
-echo 'USUARIO <input title="USUARIO?" type="text" name="useuser" size="50" value="'.htmlspecialchars( $useuser ).'" /><br>';
+echo 'ACTIVE <input title="ENTER yes OR no IN lowercase" type="text" name="sendmail" size="50" value="'.htmlspecialchars( $sendmail ).'" /><br>';
+echo 'BACKGROUND <input title="FULL PATH OR URL WITH JPG&#10;(type azar for random backgrounds)" type="text" name="fondo" size="50" value="'.htmlspecialchars( $fondo ).'" /><br>';
+echo 'SMTP <input title="DATA OF YOUR SMTP (ATTENTION IT IS RECOMMENDED THAT YOU USE GMX.COM)" type="text" name="usemail" size="50" value="'.htmlspecialchars( $usemail ).'" /><br>';
+echo 'USER <input title="USER?" type="text" name="useuser" size="50" value="'.htmlspecialchars( $useuser ).'" /><br>';
 echo 'PASSWORD <input title="PASSWORD?" type="password" name="usepass" size="50" value="'.htmlspecialchars( $usepass ).'" /><br>';
 echo 'COMENTARIO <input title="PARA LA QSL" type="text" name="dxcomen" size="50" value="'.htmlspecialchars( $dxcomen ).'" /><br>';
 echo '<br><input type="submit" name="submit"></form>';
@@ -46,10 +46,10 @@ if ( isset( $_POST['sendmail'] ) ) {
     $newContent = '$usepass = "'.$data4.'";';
     $str = str_replace( $oldContent, $newContent, $str );
     if ( ( $sendmail != $data1 ) || ( $usemail != $data2 ) || ( $useuser != $data3 ) || ( $usepass != $data4 ) || ( $fondo != $data5 ) ) {
-        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESANDO ESPERE</h2>';
+        echo '<h2 style="background-color:#0014ff; color: #ffffff; text-align:center">PROCESSING PLEASE WAIT</h2>';
         file_put_contents( 'C:\\phpdce\\usr\\variables.php', $str );
     } else {
-        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NO SE MODIFICO NADA</h2>';
+        echo '<h2 style="background-color:#ff0000; color: #ffffff; text-align:center">NOTHING IS MODIFIED</h2>';
     }
     header( "Refresh:5" );
 }

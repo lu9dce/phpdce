@@ -15,38 +15,38 @@ echo '
 <table>
 <tr>
 <td>CALL
-<input title="LICENCIA EN MAYUSCULA" type="text" name="call" placeholder="LU9DCE">
+<input title="LICENSE IN CAPITAL LETTERS" type="text" name="call" placeholder="LU9DCE">
 </td>
 <td>GRIDSQUARE
-<input title="LOCADOR EN MAYUSCULA" type="text" name="gridsquare" placeholder="GF05OM">
+<input title="LOCATOR IN CAPITAL LETTERS" type="text" name="gridsquare" placeholder="GF05OM">
 <br>
 </td>
 </tr>
 <tr>
 <td>MODE
-<input title="EL MODO EN MAYUSCULA" type="text" name="mode" placeholder="FT8">
+<input title="THE MODE IN CAPITAL LETTERS" type="text" name="mode" placeholder="FT8">
 </td>
 <td></td>
 </tr>
 <tr>
 <td>RST_SENT
-<input title="SEÑAL EN ENVIADA" type="text" name="rst_sent" placeholder="(-/+)10">
+<input title="SIGNAL IN SENT" type="text" name="rst_sent" placeholder="(-/+)10">
 </td>
 <td>RST_RCVD
-<input title="SEÑAL EN RECIVIDA" type="text" name="rst_rcvd" placeholder="(-/+)10">
+<input title="RECEIVED SIGNAL" type="text" name="rst_rcvd" placeholder="(-/+)10">
 </td>
 </tr>
 <tr>
 <td>BAND
-<input title="BANDA CON LA m EN MINUSCULA AL FINAL" type="text" name="band" placeholder="10m">
+<input title="BAND WITH A SMALL LETTER m AT THE END" type="text" name="band" placeholder="10m">
 </td>
 <td>FREQ
-<input title="FRECUENCIA NO OLVIDE EL PUNTO" type="text" name="freq" placeholder="28.074">
+<input title="FREQUENCY DONT FORGET THE POINT" type="text" name="freq" placeholder="28.074">
 </td>
 </tr>
 </table>
 COMMENT
-<input title="COMENTARIO SI LO DESEA" type="text" name="comment" placeholder="TKX X QSO">
+<input title="COMMENT IF YOU WISH" type="text" name="comment" placeholder="TKX X QSO">
 <br>
 <br>
 <input type="submit" name="submit">
