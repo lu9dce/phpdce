@@ -9,17 +9,9 @@ https://gitlab.com/radioactividad/phpdce
 
 <b>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</b>
 
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_2.png" width="150">
-
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_3.png" width="150">
-
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_4.png" width="150">
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_2.png" width="150"><img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_3.png" width="150"><img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_4.png" width="150">
 <br><br>
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_6.png" width="150">
-
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_8.png" width="150">
-
-<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_9.png" width="150">
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_6.png" width="150"><img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_8.png" width="150"><img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_9.png" width="150">
 
 Video : https://www.youtube.com/embed/7LT-xJI-4zM
 
