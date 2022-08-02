@@ -1,8 +1,27 @@
 # PHPDCE
+https://gitlab.com/radioactividad/phpdce
 
-<img src="https://gitlab.com/radioactividad/phpdce/-/wikis/uploads/f689221a4806a27c4462c60aae8def48/FYtP279WQAEwJ3M.png" width="350">
+-------------------
 
-<h1><b>Move to https://gitlab.com/radioactividad/phpdce</b></h1>
+<img src="https://hamalert.org/myspot?c=LU9DCE&h=3a455314d4cb84b7&dark=1" srcset="https://hamalert.org/myspot?c=LU9DCE&h=3a455314d4cb84b7&dark=1&hr=1 2x" />
+
+<h1>ATTENTION ONLY WORKS IF IT IS IN THE CORRECT PATH (c:\phpdce)</h1>
+
+<b>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</b>
+
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_2.png" width="150">
+
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_3.png" width="150">
+
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_4.png" width="150">
+<br><br>
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_6.png" width="150">
+
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_8.png" width="150">
+
+<img src="https://a.fsdn.com/con/app/proj/phpdce/screenshots/Screenshot_9.png" width="150">
+
+Video : https://www.youtube.com/embed/7LT-xJI-4zM
 
 <b>program that processes the adi automatically in real time</b><br>
 
